@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { Play, Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import Image from "next/image";
 import RetellButton from "./RetellButton";
+import VideoModal from "./VideoModal";
 
 export default function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -33,7 +36,10 @@ export default function Hero() {
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-4">
               <RetellButton variant="primary" />
-              <button className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card border border-border hover:border-green-500/50 transition-all font-medium">
+              <button 
+                onClick={() => setIsVideoOpen(true)}
+                className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card border border-border hover:border-green-500/50 transition-all font-medium"
+              >
                 <Play className="w-4 h-4" />
                 Watch Demo
               </button>
@@ -93,6 +99,13 @@ export default function Hero() {
           </ScrollReveal>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <VideoModal 
+        isOpen={isVideoOpen} 
+        onClose={() => setIsVideoOpen(false)} 
+        videoId="NjjLoactKaI" 
+      />
     </section>
   );
 }
