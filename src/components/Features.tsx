@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, Shield, TrendingUp, Clock, Users, BarChart3 } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const features = [
   {
@@ -41,6 +42,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
+          <ScrollReveal direction="right" duration={0.6}>
           <div className="space-y-8">
             <span className="text-green-500 text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
@@ -62,12 +64,13 @@ export default function Features() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
 
           {/* Right Content - Feature Cards */}
           <div className="grid sm:grid-cols-2 gap-4">
             {features.map((feature, index) => (
+              <ScrollReveal key={index} direction="left" duration={0.5} delay={0.1 * index}>
               <div
-                key={index}
                 className="bg-card rounded-xl p-5 border border-border hover:border-green-500/30 transition-all group"
               >
                 <div className="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-colors">
@@ -76,6 +79,7 @@ export default function Features() {
                 <h3 className="font-semibold mb-2">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground">{feature.description}</p>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

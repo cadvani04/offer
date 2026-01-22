@@ -1,6 +1,7 @@
 "use client";
 
 import { Bot, Star, Palette, TrendingUp } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const services = [
   {
@@ -38,6 +39,7 @@ export default function Services() {
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
+        <ScrollReveal direction="up" duration={0.6}>
         <div className="text-center mb-16 space-y-4">
           <span className="text-green-500 text-sm font-semibold tracking-wider uppercase">Our Services</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -47,12 +49,13 @@ export default function Services() {
             We combine cutting-edge AI technology with premium design to deliver solutions that actually move the needle for your business.
           </p>
         </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
+            <ScrollReveal key={index} direction="up" duration={0.5} delay={0.1 * index}>
             <div
-              key={index}
               className="group relative bg-card rounded-2xl p-6 border border-border hover:border-green-500/30 transition-all duration-300"
             >
               {/* Icon */}
@@ -74,6 +77,7 @@ export default function Services() {
                 ))}
               </ul>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

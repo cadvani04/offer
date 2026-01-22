@@ -1,11 +1,13 @@
 "use client";
 
 import { ArrowRight, Phone, Mail } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 export default function CTA() {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
+        <ScrollReveal direction="up" duration={0.7}>
         <div className="bg-gradient-cta rounded-3xl p-8 sm:p-12 lg:p-16 border border-green-500/20 text-center relative overflow-hidden">
           {/* Background Gradient */}
           <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-transparent to-purple-500/5 pointer-events-none" />
@@ -46,6 +48,7 @@ export default function CTA() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

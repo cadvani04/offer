@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 const footerLinks = {
   services: [
@@ -38,6 +39,7 @@ export default function Footer() {
   return (
     <footer className="py-16 px-4 sm:px-6 lg:px-8 border-t border-border bg-card/30">
       <div className="max-w-7xl mx-auto">
+        <ScrollReveal direction="up" duration={0.6}>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
@@ -108,8 +110,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        </ScrollReveal>
 
         {/* Bottom Bar */}
+        <ScrollReveal direction="up" duration={0.6} delay={0.2}>
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">
             &copy; 2026 Agency Flow. All rights reserved.
@@ -126,6 +130,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </footer>
   );
