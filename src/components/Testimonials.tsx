@@ -8,7 +8,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     role: "Owner, Mitchell Dental",
     initials: "SM",
-    content: "Agency Flow's AI receptionist has been a game-changer. We went from missing 30% of calls to capturing every single lead. Our reviews jumped from 3.8 to 4.9 stars in just 3 months.",
+    content: "Flip's AI receptionist has been a game-changer. We went from missing 30% of calls to capturing every single lead. Our reviews jumped from 3.8 to 4.9 stars in just 3 months.",
     rating: 5,
     bgColor: "bg-gradient-to-br from-green-500/20 to-purple-500/20",
   },
@@ -101,7 +101,7 @@ export default function Testimonials() {
             Loved by <span className="text-green-500">500+ Businesses</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about working with Agency Flow.
+            Don't just take our word for it. Here's what our clients have to say about working with Flip.
           </p>
         </div>
         </ScrollReveal>

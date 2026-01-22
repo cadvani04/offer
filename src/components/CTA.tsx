@@ -20,19 +20,19 @@ export default function CTA() {
 
             {/* Subheading */}
             <p className="text-muted-foreground max-w-xl mx-auto text-lg">
-              Join 500+ businesses already using Agency Flow to capture more leads, earn more reviews, and grow faster. Let's talk about your goals.
+              Join 500+ businesses already using Flip to capture more leads, earn more reviews, and grow faster. Let's talk about your goals.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="flex items-center gap-2 px-8 py-4 rounded-xl bg-green-500 text-primary-foreground font-medium hover:bg-green-600 transition-colors">
+              <a href="https://calendly.com/advanicurran/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-4 rounded-xl bg-green-500 text-primary-foreground font-medium hover:bg-green-600 transition-colors">
                 Book a Free Demo
                 <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="flex items-center gap-2 px-8 py-4 rounded-xl bg-card border border-border hover:border-green-500/50 transition-all font-medium">
+              </a>
+              <a href="https://calendly.com/advanicurran/30min" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-4 rounded-xl bg-card border border-border hover:border-green-500/50 transition-all font-medium">
                 <Phone className="w-5 h-5" />
                 Schedule a Call
-              </button>
+              </a>
             </div>
 
             {/* Contact Info */}
@@ -41,9 +41,9 @@ export default function CTA() {
                 <Phone className="w-4 h-4" />
                 <span>(123) 456-7890</span>
               </a>
-              <a href="mailto:hello@agencyflow.ai" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
+              <a href="mailto:hello@flip.ai" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>hello@agencyflow.ai</span>
+                <span>hello@flip.ai</span>
               </a>
             </div>
           </div>

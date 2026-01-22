@@ -45,9 +45,9 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 rounded-lg bg-green-500/20 flex items-center justify-center border border-green-500/30">
-                <span className="text-green-500 font-bold text-sm">AF</span>
+                <span className="text-green-500 font-bold text-sm">F</span>
               </div>
-              <span className="text-white font-semibold">Agency Flow</span>
+              <span className="text-white font-semibold">Flip</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               AI-powered solutions for modern businesses. Capture more leads, earn more reviews, grow faster.
@@ -116,7 +116,7 @@ export default function Footer() {
         <ScrollReveal direction="up" duration={0.6} delay={0.2}>
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground">
-            &copy; 2026 Agency Flow. All rights reserved.
+            &copy; 2026 Flip. All rights reserved.
           </p>
           <div className="flex gap-6">
             {socialLinks.map((link, index) => (

@@ -11,9 +11,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-9 h-9 rounded-lg bg-green-500/20 flex items-center justify-center border border-green-500/30">
-              <span className="text-green-500 font-bold text-sm">AF</span>
+              <span className="text-green-500 font-bold text-sm">F</span>
             </div>
-            <span className="text-white font-semibold text-lg">Agency Flow</span>
+            <span className="text-white font-semibold text-lg">Flip</span>
           </Link>
 
           {/* Navigation Links */}
@@ -34,7 +34,9 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <Link
-            href="#contact"
+            href="https://calendly.com/advanicurran/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-2 px-5 py-2 rounded-lg border border-border hover:border-green-500/50 bg-card hover:bg-card/80 transition-all text-sm font-medium"
           >
             Book a Demo

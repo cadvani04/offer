@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowRight, Play, Star } from "lucide-react";
+import { Play, Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import Image from "next/image";
+import RetellButton from "./RetellButton";
 
 export default function Hero() {
   return (
@@ -26,15 +27,12 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground max-w-xl">
-              AI Receptionists that never sleep. 5-star Google reviews on autopilot. High-end web design that converts. We're Agency Flow.
+              AI Receptionists that never sleep. 5-star Google reviews on autopilot. High-end web design that converts. We're Flip.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-4">
-              <button className="flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500 text-primary-foreground font-medium hover:bg-green-600 transition-colors">
-                Test Drive Our AI
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              <RetellButton variant="primary" />
               <button className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card border border-border hover:border-green-500/50 transition-all font-medium">
                 <Play className="w-4 h-4" />
                 Watch Demo
