@@ -37,13 +37,13 @@ export default function CTA() {
 
             {/* Contact Info */}
             <div className="flex flex-wrap justify-center items-center gap-6 pt-4">
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
+              <a href="tel:+12084243349" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>(123) 456-7890</span>
+                <span>(208) 424-3349</span>
               </a>
-              <a href="mailto:hello@flip.ai" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
+              <a href="mailto:advanicurran@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-green-500 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>hello@flip.ai</span>
+                <span>advanicurran@gmail.com</span>
               </a>
             </div>
           </div>
